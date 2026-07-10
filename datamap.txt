@@ -1,0 +1,27 @@
+✅ Events
+
+✅ Clean
+
+✅ Passes
+
+✅ Vertices
+
+✅ Edges
+
+⬜ Read Matches
+
+⬜ Add match_id
+
+⬜ Build graph PER MATCH
+
+⬜ Degree
+
+⬜ PageRank
+
+⬜ Density
+
+⬜ Clustering
+
+⬜ Community Detection
+
+⬜ Visualization
