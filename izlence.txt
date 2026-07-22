@@ -1,0 +1,21 @@
+✔ Graph Construction
+
+✔ Graph Validation
+
+✔ Top Passing Pairs
+
+✔ Out Degree
+
+✔ In Degree
+
+✔ Total Degree
+
+✔ Network Density
+
+Team Statistics
+
+Match Statistics
+
+Shot Statistics
+
+Possession Statistics
