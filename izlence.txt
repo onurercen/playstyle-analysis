@@ -1,21 +1,11 @@
-✔ Graph Construction
-
-✔ Graph Validation
-
-✔ Top Passing Pairs
-
-✔ Out Degree
-
-✔ In Degree
-
-✔ Total Degree
-
-✔ Network Density
-
-✔ Team Statistics
-
-Match Statistics
-
-Shot Statistics
-
-Possession Statistics
+Proposal'da vaat edilen ama notebook'ta eksik olanlar
+GraphFrames hiç kullanılmamış — proposal'da "Big Data Frameworks" listesinde GraphFrames var ama notebook'ta import bile edilmemiş. Tüm derece (degree) hesapları elle DataFrame join/groupBy ile yapılmış, GraphFrames'in Graph yapısı hiç kurulmamış.
+PageRank yok — proposal'ın merkezi metriklerinden biri, notebook'ta hiç hesaplanmamış.
+Clustering coefficient yok — proposal'da belirtilmiş, koddan tamamen yok.
+Lineups verisi kullanılmamış — proposal "multiple datasets (events, lineups, matches, and tracking data)" diyor; notebook sadece events ve matches okuyor, lineups dosyaları hiç okunmuyor.
+Tracking data yok — proposal'da geçen tracking verisi ile spatio-temporal analiz hiç yapılmamış.
+Shot/goal/xG/match outcome entegrasyonu yok — proposal "performance indicators such as possession, shots, goals, and match outcomes" ile network metriklerinin birlikte analiz edileceğini söylüyor. Notebook'ta sadece pas verisi işlenmiş; şut, gol, xG, galibiyet/beraberlik/mağlubiyet hiç ele alınmamış.
+Spatio-temporal analiz yok — location ve end_location kolonları ilk aşamada seçilmiş ama sonraki (match_id ile yeniden kurulan) passes DataFrame'inde bu kolonlar düşürülmüş, hiç kullanılmamış.
+Görselleştirme yok — proposal Matplotlib/Seaborn/NetworkX'i araç olarak listelemiş; notebook'ta hiç görsel/grafik üretimi yok, sadece .show() ile tablo çıktıları var.
+Docker tabanlı Spark kurulumu yok — local[*] modunda tek makinede çalışıyor, proposal'daki "optional Docker-based Spark setup" hiç kurulmamış (bu "optional" olduğu için kritik değil ama raporda net belirtilmeli).
+Partitioning stratejisi yok — proposal "performance optimization... partitioning the data based on competitions or teams" diyor; notebook'ta böyle bir partition stratejisi (repartition/bucketBy vs.) uygulanmamış.
