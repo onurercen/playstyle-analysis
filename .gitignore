@@ -1,1 +1,4 @@
 statsbomb-open-data/
+.ipynb_checkpoints/
+spark-warehouse/
+__pycache__/
