@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  pyspark-notebook:
+    image: jupyter/pyspark-notebook:spark-3.5.0
+    container_name: football-analytics-spark
+    ports:
+      - "8888:8888"   # Jupyter Notebook arayüzüne erişim portu
+      - "4040:4040"   # Spark Web UI portu (İşlemleri izlemek için)
+    volumes:
+      - .:/home/jovyan/work  # Bulunduğunuz klasörü Docker içindeki work klasörüne bağlar
+    environment:
+      # GraphFrames paketini Spark ayağa kalkarken otomatik indirmesini sağlayan komut:
+      - PYSPARK_SUBMIT_ARGS=--packages graphframes:graphframes:0.8.3-spark3.5-s_2.12 pyspark-shell
+      - JUPYTER_ENABLE_LAB=yes  # Modern JupyterLab arayüzünü açar
